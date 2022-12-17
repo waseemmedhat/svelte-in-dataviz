@@ -19,7 +19,7 @@
 	</p>
 
 	<p class="mb center">
-		<img class="mb" src="/michael.gif" alt="Michael Scott starts a sentence" />
+		<img class="mb" src="/michael.jpg" alt="Michael Scott starts a sentence" />
 	</p>
 
 	<h2 class="mb center">Technologies used in this project:</h2>
@@ -51,7 +51,7 @@
 	<ul class="contents-list">
 		<b>1. Introduction</b>
 		<ul>
-			<li><a href="basics">a. Basics</a></li>
+			<li><a href="/">a. Basics</a></li>
 			<option value="adding-data">b. Adding data</option>
 			<option value="dynamic-attributes">c. Dynamic attributes</option>
 			<option value="styling">d. Styling</option>
@@ -222,14 +222,5 @@
 
 	li {
 		margin-top: 3px;
-	}
-
-	.loading {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		height: 100vh;
-		background-color: rgba(0, 0, 0, 0.2);
 	}
 </style>
