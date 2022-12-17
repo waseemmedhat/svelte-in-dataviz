@@ -1,14 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Overpass:wght@300;400;700&display=swap');
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
+	scroll-padding-top: 15px;
+}
+
+code {
+	font-family: 'Chivo Mono', monospace;
+	background-color: #ddd;
+	padding: 1px 3px;
 }
 
 body {
 	background-image: linear-gradient(100deg, #e0e8ee, #dae2e8);
 	border-top: 20px solid #ff3e00;
+	border-bottom: 20px solid #ff3e00;
 	padding: 20px;
 	font-family: 'Overpass', sans-serif;
 }

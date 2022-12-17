@@ -1,7 +1,54 @@
 <div class="container">
-	<h1>Svetle <small>in Dataviz</small></h1>
+	<h1 class="mb center">Svetle <small>in Dataviz</small></h1>
 
-	<ul>
+	<h2 class="mb center">
+		About this project <small><a href="#contents">Skip to contents</a></small>
+	</h2>
+
+	<p class="mb justify">
+		So, I came up with this way to escape tutorial hell and to practical stuff but without actually
+		leaving the tutorials (<i>talk about programmers hacking their way out of problems...</i>). This
+		will be my way of practicing with Svelte (and a little SvelteKit), CSS, and data visualization.
+	</p>
+
+	<p class="mb justify">
+		The main idea is to take the <a href="https://svelte.dev/tutorial/">official Svelte tutorial</a>
+		and to apply each tutorial lesson on a dataviz-related topic. I have no idea on how to implement
+		this into an actual project, but I took the leap to start anyway and see where the project will go
+		from there.
+	</p>
+
+	<p class="mb center">
+		<img class="mb" src="/michael.gif" alt="Michael Scott starts a sentence" />
+	</p>
+
+	<h2 class="mb center">Technologies used in this project:</h2>
+	<ul class="mb">
+		<li><b>Svelte</b>: what I'm here for.</li>
+		<li>
+			<b>SvelteKit</b>: I use it here mainly as a SSG with <code>adapter-static</code>, so I won't
+			use any fancy features, just taking advantage of client-side routing and general project
+			structure.
+		</li>
+		<li>
+			<b>CSS</b>: I almost used Tailwind for this project, but thought I'd try just vanilla CSS to
+			maximize the learning I get out of this project
+		</li>
+		<li>
+			<b>D3</b>: This is the de facto standard library for data visualization. It provides low-level
+			features and utilities for building visualizations. It also has a DOM manipulation API similar
+			to jQuery, but I will hand that over to Svelte.
+		</li>
+	</ul>
+
+	<p class="mb justify">
+		<i>Note:</i> The styling of this project (font, colors, etc.) is heavily inspired from the
+		<a href="https://svelte.dev/">Official Svelte web page</a>, though I might not have done a great
+		job at imitating the design.
+	</p>
+
+	<h2 id="contents" class="mb center">Contents</h2>
+	<ul class="contents-list">
 		<b>1. Introduction</b>
 		<ul>
 			<li><a href="basics">a. Basics</a></li>
@@ -133,23 +180,56 @@
 	.container {
 		max-width: 1000px;
 		margin-inline: auto;
+		padding: 25px 50px;
+		background-color: whitesmoke;
+		border-radius: 1rem;
+		box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
 	}
 
 	h1 {
 		color: #4a4a55;
-		font-size: min(10vw, 5rem);
+		font-size: min(9vw, 5rem);
 		text-transform: uppercase;
 		font-weight: 400;
 		text-align: center;
-		margin-bottom: 20px;
 	}
 
 	h1 small {
-		font-size: calc(min(10vw, 5rem) - 1rem);
+		font-size: calc(min(9vw, 5rem) - 1rem);
 		font-weight: 300;
 	}
 
+	.mb {
+		margin-bottom: 20px;
+	}
+
+	.center {
+		text-align: center;
+	}
+
+	.justify {
+		text-align: justify;
+		text-justify: inter-word;
+	}
+
 	ul {
+		list-style-type: circle;
+	}
+
+	.contents-list li {
 		list-style-type: none;
+	}
+
+	li {
+		margin-top: 3px;
+	}
+
+	.loading {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: rgba(0, 0, 0, 0.2);
 	}
 </style>
