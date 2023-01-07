@@ -15,6 +15,11 @@
 		&lt;<span class="home-link-text">Home</span>
 	</a>
 {/if}
+
+<a href="https://github.com/waseemmedhat/svelte-in-dataviz" target="_blank" rel="noreferrer">
+	<img class="github" src="/github-mark.svg" alt="GitHub" />
+</a>
+
 <div class="container">
 	{#key data.url}
 		<div in:fade={{ delay: 300, duration: 250 }} out:fade={{ duration: 250 }}>
@@ -54,5 +59,11 @@
 
 	.home-link-text {
 		margin-left: 10px;
+	}
+
+	.github {
+		width: 30px;
+		position: fixed;
+		right: 20px;
 	}
 </style>
