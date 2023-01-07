@@ -68,3 +68,7 @@ ul {
 li {
 	margin-top: 3px;
 }
+
+img {
+	max-width: 100%;
+}
