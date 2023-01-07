@@ -8,13 +8,8 @@
 
 <p class="mb justify">
 	The main idea is to take the <a href="https://svelte.dev/tutorial/">official Svelte tutorial</a>
-	and to apply each tutorial lesson on a dataviz-related topic. I have no idea on how to implement this
-	into an actual project, but I took the leap to start anyway and see where the project will go from
-	there.
-</p>
-
-<p class="mb center">
-	<img class="mb" src="/michael.jpg" alt="Michael Scott starts a sentence" />
+	and to apply each tutorial lesson on a dataviz-related topic. I expect the end product to look like
+	a series of blogs or articles that would teach others after having taught myself.
 </p>
 
 <h2 class="mb center">Technologies</h2>
