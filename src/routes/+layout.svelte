@@ -3,10 +3,15 @@
 	import '../app.css';
 
 	export let data;
+	let scrollY;
+
+	$: homeLinkClass = 'home-link' + (scrollY < 20 ? ' full' : '');
 </script>
 
+<svelte:window bind:scrollY />
+
 {#if data.url !== '/'}
-	<a class="home-link" href="/" transition:fade={{ duration: 250 }}>
+	<a class={homeLinkClass} href="/" transition:fade={{ duration: 250 }}>
 		&lt;<span class="home-link-text">Home</span>
 	</a>
 {/if}
@@ -37,6 +42,10 @@
 
 		transition: all;
 		transition-duration: 300ms;
+	}
+
+	.home-link.full {
+		width: 5rem;
 	}
 
 	.home-link:hover {
