@@ -21,3 +21,50 @@ body {
 	padding: 20px;
 	font-family: 'Overpass', sans-serif;
 }
+
+.container {
+	max-width: 1000px;
+	margin-inline: auto;
+	padding: 25px 50px;
+	background-color: whitesmoke;
+	border-radius: 1rem;
+	box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+	color: #4a4a55;
+	font-size: min(9vw, 5rem);
+	text-transform: uppercase;
+	font-weight: 400;
+	text-align: center;
+}
+
+h1 small {
+	font-size: calc(min(9vw, 5rem) - 1rem);
+	font-weight: 300;
+}
+
+.mb {
+	margin-bottom: 20px;
+}
+
+.center {
+	text-align: center;
+}
+
+.justify {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+ul {
+	list-style-type: circle;
+}
+
+.contents-list li {
+	list-style-type: none;
+}
+
+li {
+	margin-top: 3px;
+}
