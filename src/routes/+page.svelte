@@ -16,7 +16,7 @@
 		<option value="html-tags">f. HTML tags</option>
 		<option value="making-an-app">g. Making an app</option>
 	</ul>
-	<optgroup label="2. Reactivity">
+	<!-- <optgroup label="2. Reactivity">
 		<option value="reactive-assignments">a. Assignments</option>
 		<option value="reactive-declarations">b. Declarations</option>
 		<option value="reactive-statements">c. Statements</option>
@@ -129,7 +129,7 @@
 	<optgroup label="18. Debugging"> <option value="debug">a. The @debug tag</option></optgroup>
 	<optgroup label="19. Next steps">
 		<option value="congratulations">a. Congratulations!</option>
-	</optgroup>
+	</optgroup> -->
 </ul>
 
 <style>
